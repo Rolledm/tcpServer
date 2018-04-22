@@ -52,8 +52,8 @@ int main() {
 }
 
 
-static void* thread_main(void* arg) { // ДЗ: сделать нормальную передачу tcp_in как аргумента
-    int count;                        // и сделать так, чтобы не крашилось
+static void* thread_main(void* arg) { 
+    int count;                        
     char buf[256];
     int* tcp_in = (int*) arg;
 
